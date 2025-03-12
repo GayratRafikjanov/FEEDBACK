@@ -9,6 +9,9 @@
     <h1>Review Page</h1>
     <form action="/" method="POST">
         {% csrf_token %}
+        {% if error %}
+        <p>This form is invalid! Enter a valid username</p>
+        {% endif %}
         <label for="username">Your name</label>
         <input id="username" name="username" type="text"> 
         <button type="submit">Send</button>
