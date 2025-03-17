@@ -1,6 +1,6 @@
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
-
+from .forms import ReviewForm
 # Create your views here.
 
 def review(request):
