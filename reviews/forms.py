@@ -1,5 +1,4 @@
 from django import forms
-<<<<<<< HEAD
 from .models import Review # Import the Review model from models.py
 
 # class ReviewForm(forms.Form):
@@ -27,10 +26,3 @@ class ReviewForm(forms.ModelForm): # Change the form to a ModelForm
                 'max_length': "Please enter a name no longer than 100 characters!"
             }
         }
-=======
-
-
-class ReviewForm(forms.Form):
-    pass
-
->>>>>>> 6f7acf6 (Added forms.py in reviews app)
